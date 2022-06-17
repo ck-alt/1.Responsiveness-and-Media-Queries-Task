@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsla(355, 100%, 50%, 0.5);
+    font-size: 16px;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+#msg {
+    border: 1px solid red;
+    margin-right: 20px;
+    width: 50em;
+}
+
+#msg,
+form {
+    margin-top: 20vh;
+    width: 30em;
+    height: 30em;
+}
+
+form>p {
+    background-color: hsl(248, 32%, 49%);
+    height: 3em;
+    margin-top: 0px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+}
+
+#pay {
+    text-align: center;
+    height: 20px;
+    width: 30em;
+    color: white;
+    font-size: 12px;
+}
+
+#signin {
+    background-color: white;
+    margin-bottom: 0px;
+    height: 26em;
+    border-radius: 10px;
+}
+
+#signin>input {
+    width: 80%;
+    height: 40px;
+    border-color: hsla(0, 0%, 0%, 0.05);
+    border-radius: 5px;
+    margin-left: 2.5em;
+}
+
+input:first-child {
+    margin-top: 40px;
+}
+
+input:not(input:first-child) {
+    margin-top: 12px;
+}
+
+input:not(input:last-child) {
+    padding-left: 30px;
+}
+
+input: #signin>p {
+    font-size: 12px;
+    text-align: center;
+}
+
+#button {
+    background-color: blue;
+    width: 100%;
+}
+
+#condi {
+    color: red;
+}
