@@ -1,90 +1,146 @@
+* {
+    width: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url("images/bg-intro-desktop.png");
     background-color: hsla(355, 100%, 50%, 0.5);
-    font-size: 16px;
+    font-size: 0.8rem;
 }
 
 #main {
     display: flex;
-    flex-direction: row;
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
+    flex-direction: column;
     width: 100%;
-    justify-content: center;
-    align-content: center;
 }
 
 #msg {
-    border: 1px solid red;
-    margin-right: 20px;
-    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
-#msg,
 form {
-    margin-top: 20vh;
-    width: 30em;
-    height: 30em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    width: 80%%;
+}
+
+button {
+    width: 80%;
 }
 
 form>p {
     background-color: hsl(248, 32%, 49%);
-    height: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
     margin-top: 0px;
     border-radius: 10px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 30em;
-}
-
-#pay {
+    width: 75%;
     text-align: center;
-    height: 20px;
-    width: 30em;
     color: white;
-    font-size: 12px;
+    padding: 5px;
 }
 
-#signin {
-    background-color: white;
-    margin-bottom: 0px;
-    height: 26em;
-    border-radius: 10px;
-}
-
-#signin>input {
-    width: 80%;
-    height: 40px;
-    border-color: hsla(0, 0%, 0%, 0.05);
-    border-radius: 5px;
-    margin-left: 2.5em;
-}
-
-input:first-child {
-    margin-top: 40px;
-}
-
-input:not(input:first-child) {
-    margin-top: 12px;
-}
-
-input:not(input:last-child) {
-    padding-left: 30px;
-}
-
-input: #signin>p {
-    font-size: 12px;
-    text-align: center;
-}
-
-#button {
-    background-color: blue;
-    width: 100%;
-}
-
-#condi {
-    color: red;
+@media (min-width:1440px) {
+    #main {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    #msg {
+        margin-right: 20px;
+        margin-left: auto;
+        width: 50em;
+    }
+    h2 {
+        color: hsl(0, 0%, 100%);
+        font-size: 3rem;
+        margin-top: 100px;
+        line-height: 1.2em;
+        margin-bottom: 15px;
+    }
+    #msg>p {
+        color: hsl(0, 0%, 100%);
+        margin-top: 15px;
+    }
+    #msg,
+    form {
+        margin-top: 10vh;
+        width: 30em;
+        height: 30em;
+    }
+    form {
+        margin-left: 20px;
+        margin-right: auto;
+    }
+    form>p {
+        background-color: hsl(248, 32%, 49%);
+        height: 3em;
+        margin-top: 0px;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 30em;
+    }
+    #pay {
+        text-align: center;
+        height: 20px;
+        width: 30em;
+        color: white;
+        font-size: 12px;
+    }
+    #signin {
+        background-color: white;
+        margin-bottom: 0px;
+        height: 26em;
+        border-radius: 10px;
+    }
+    #signin>input {
+        width: 80%;
+        height: 40px;
+        border-color: hsla(0, 0%, 0%, 0.05);
+        border-radius: 5px;
+        margin-left: 2.5em;
+    }
+    input:first-child {
+        margin-top: 40px;
+    }
+    input:not(input:first-child) {
+        margin-top: 12px;
+    }
+    input:not(input:last-child) {
+        padding-left: 30px;
+    }
+    #signin>p {
+        font-size: 12px;
+        text-align: center;
+    }
+    button {
+        background-color: hsl(154, 59%, 51%);
+        border: none;
+        margin-top: 10px;
+        border-radius: 5px;
+        color: hsl(0, 100%, 100%);
+        width: 418px;
+        height: 40px;
+        margin-left: 34px;
+        font-size: 13px;
+    }
+    #condi {
+        color: red;
+    }
 }
