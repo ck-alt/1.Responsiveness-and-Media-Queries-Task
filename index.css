@@ -7,6 +7,7 @@ body {
     background-image: url("images/bg-intro-desktop.png");
     background-color: hsla(355, 100%, 50%, 0.5);
     font-size: 0.8rem;
+    overflow-x: hidden;
 }
 
 #main {
@@ -16,40 +17,120 @@ body {
 }
 
 #msg {
+    width: 80%;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     margin-bottom: 0px;
 }
 
+h2 {
+    color: white;
+}
+
+#msg>p {
+    color: hsl(0, 0%, 95%);
+}
+
 form {
+    margin-top: 0px;
     width: 80%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
+#signin {
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
 input {
-    width: 80%%;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 40px;
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-color: hsla(0, 0%, 0%, 0.05);
+    padding-left: 20px;
+}
+
+input:first-child {
+    margin-top: 20px;
 }
 
 button {
-    width: 80%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 40px;
+    width: 81%;
+    margin-right: auto;
+    margin-left: 11%;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-size: 3.5vw;
 }
 
-form>p {
+#info {
     background-color: hsl(248, 32%, 49%);
     margin-left: auto;
     margin-right: auto;
     height: 50px;
-    margin-top: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
     border-radius: 10px;
-    width: 75%;
-    text-align: center;
-    color: white;
-    padding: 5px;
+    width: 100%;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (min-width:1440px) {
+#hint {
+    width: 70%;
+    text-align: center;
+    height: 20px;
+    line-height: 1em;
+    font-size: 10px;
+    padding: 10px;
+}
+
+#hint {
+    color: hsl(0, 0%, 80%);
+}
+
+#hint>span {
+    color: white;
+}
+
+#signin>p {
+    height: 50px;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+#condi {
+    color: red;
+}
+
+@media only screen and (min-width: 768px) {
     #main {
         display: flex;
         flex-direction: row;
@@ -88,7 +169,7 @@ form>p {
     }
     form>p {
         background-color: hsl(248, 32%, 49%);
-        height: 3em;
+        height: 10px;
         margin-top: 0px;
         border-radius: 10px;
         display: grid;
@@ -106,7 +187,7 @@ form>p {
     #signin {
         background-color: white;
         margin-bottom: 0px;
-        height: 26em;
+        height: 35em;
         border-radius: 10px;
     }
     #signin>input {
@@ -122,9 +203,6 @@ form>p {
     input:not(input:first-child) {
         margin-top: 12px;
     }
-    input:not(input:last-child) {
-        padding-left: 30px;
-    }
     #signin>p {
         font-size: 12px;
         text-align: center;
@@ -133,12 +211,8 @@ form>p {
         background-color: hsl(154, 59%, 51%);
         border: none;
         margin-top: 10px;
-        border-radius: 5px;
         color: hsl(0, 100%, 100%);
-        width: 418px;
-        height: 40px;
-        margin-left: 34px;
-        font-size: 13px;
+        font-size: 1em;
     }
     #condi {
         color: red;
